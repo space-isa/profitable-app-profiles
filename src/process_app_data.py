@@ -22,7 +22,6 @@ def extract_app_data(filename, input_folder, tag,
         else: 
             return (dataset)
 
-
 def clean_app_data(data, tag, indicies, *args):
     if len(indicies) != 2: 
         print("Two indicies required for: 1) App name and 2) App reviews")

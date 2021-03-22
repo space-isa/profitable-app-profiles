@@ -19,8 +19,6 @@ class TestRetrieveFunction(unittest.TestCase):
     -------
         test_findCSV : Given filename, return csv file.
 
-        test_noInputSpecified : Return csv file without user-defined inputs.
-
         test_wrongFile : Given incorrect filename, return SystemExit code 1,
                          as file does not exist.
     """
