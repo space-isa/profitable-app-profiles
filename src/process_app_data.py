@@ -14,6 +14,7 @@ def extract_app_data(filename, input_folder, tag,
     with open(datafile, 'r') as data:
         read_file = csv.reader(data)
         dataset = list(read_file)
+        print("Data extracted.")
         # Check if user has included data with a header
         if header:
             data_header = dataset[0]
