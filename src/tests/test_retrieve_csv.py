@@ -2,10 +2,10 @@ import unittest
 
 #  Enable unittest to find source code
 import sys
-sys.path.insert(0, '../../../../src')
+sys.path.insert(0, '../../src')
 
 #  Import module to test
-from retrieve_csv import retrive_csv_file
+from retrieve_csv import retrive_datafile
 
 
 class TestRetrieveFunction(unittest.TestCase):
@@ -26,31 +26,21 @@ class TestRetrieveFunction(unittest.TestCase):
     """
 
     def test_findCSV(self,
-                     filename="censustract_00_10.csv",
-                     input_folder=None):
+                     filename="googleplaystore.csv",
+                     input_folder='../../data/'):
         """Ensure correct filepath given filename."""
 
-        csv_file = retrive_csv_file(filename, input_folder)
-        expected_output = filename
-        self.assertEqual(csv_file, expected_output)
-
-    def test_noInputSpecified(self,
-                              filename=None,
-                              input_folder=None):
-        """Test if file can be found without explicit input."""
-
-        csv_file = retrive_csv_file(filename, None)
-        expected_output = "./censustract_00_10.csv"
+        csv_file = retrive_datafile(filename, input_folder)
+        expected_output = input_folder + filename
         self.assertEqual(csv_file, expected_output)
 
     def test_wrongFile(self,
-                       filename="censustract.csv",
-                       input_folder=None):
+                       filename="Apple.csv",
+                       input_folder='../../data/'):
         """Ensure code stops when file doesn't exist."""
 
         with self.assertRaises(SystemExit) as check_assert:
-            retrive_csv_file(filename="censustract.csv",
-                             input_folder=None)
+            retrive_datafile(filename, input_folder)
         self.assertEqual(check_assert.exception.code, 1)
 
 

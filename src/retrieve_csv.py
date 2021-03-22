@@ -26,7 +26,7 @@ def retrive_datafile(filename, input_folder):
     if os.path.isfile(datafile):
         return datafile
     else:
-        print("This file does not exist.")
+        print("'{}' does not exist.".format(filename))
 
         # Check for files 
         files = glob.glob(input_folder + "/*.csv")
