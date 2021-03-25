@@ -59,7 +59,6 @@ def process_android_data():
     android_tag = "Android"
 
     #  Define input and output information
-    input_folder = '../data/'
     input_filename = 'googleplaystore.csv'
     output_filename = 'googleplaystore_cleaned.csv'
     output_folder = '../output/android/cleaned/'
@@ -76,6 +75,10 @@ def process_android_data():
     print("{} data cleaned and saved in output folder.".format(android_tag))
 
 def process_iOS_data():
+    data_folder = '../data/'
+    ios_filename = 'AppleStore.csv'
+    ios_filepath = data_folder + ios_filename
+    ios_tag = "iOS"
     pass
 
 @exception_handler
@@ -85,4 +88,5 @@ def main():
 
 if __name__ == "__main__":
     #  Run code
+    input_folder = '../data/'
     main()
