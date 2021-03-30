@@ -75,10 +75,12 @@ def process_android_data():
     print("{} data cleaned and saved in output folder.".format(android_tag))
 
 def process_iOS_data():
-    data_folder = '../data/'
-    ios_filename = 'AppleStore.csv'
-    ios_filepath = data_folder + ios_filename
     ios_tag = "iOS"
+    
+    input_filename = 'AppleStore.csv'
+    output_filename = 'AppleStore_cleaned.csv'
+    output_folder = '../output/iOS/cleaned/'
+
     pass
 
 @exception_handler
