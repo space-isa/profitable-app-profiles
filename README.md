@@ -7,7 +7,7 @@ Extension of a guided Dataquest project for the Data Engineering track.
 
 
 ## Motivation 
-As a data engineering project, this code primarily showcases how to transform raw input data (leaving the original source unchanged) and export it to a given destination. In a scaled-up version of this pipeline, data would be downloaded from a database and the transformed data directly uploaded to a database or a data warehouse. This would be a complete Extract-Transform-Load (ETL) process. Data verified using Pandas and visualized using Tableau.
+As a data engineering project, this code primarily showcases how to transform raw input data (leaving the original source unchanged) and export it to a given destination. In a scaled-up version of this pipeline, data would be downloaded from a database and the transformed data directly uploaded to a database or a data warehouse. This would be a complete Extract-Transform-Load (ETL) process. Data was verified using Pandas and visualized using Tableau.
 
 ### Project requirements
 
