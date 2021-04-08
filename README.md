@@ -13,46 +13,33 @@ As a data engineering project, this code primarily showcases how to transform ra
 
 ---
 
-## Solution Approach 
- 
-
----
-
 ## Requirements
 This code was developed and tested using Python 3.8.6.
-Install: BeautifulSoup and Geopy before use.
 
----
-
-## How to use? 
-
+Install before use: 
+- Pandas
+- Numpy 
+- Polyglot
 --- 
 
+## Tests
+Sample unit tests can be found in ```/src/tests/```
+
 ## Features 
-
-- An exception handling decorator: 
-   ```python
-   @exception_handler
-   def main(output_filename=None):
-   ...
-   ```
-
-### Other features 
-
-
-## Tests 
-
-### Unit testing 
-
-
-To run tests:
-
+- ```sort_languages.py``` sorts app data into 6 of the most-spoken languages in the US: English, Spanish, Japanese, Chinese, Vietnamese, and Tagalog.
+- Jupyter notebooks to: 
+     - explore and profile raw data ```explore_raw_app_data.ipynb```
+     - build app profiles: ```build_app_profile.ipynb```
+- Seperate Python scripts to e.g. retrieve, clean, and write data.
 ---
 
 ## Future Development Ideas
+- Access the full dataset to better apply the NLP tool and study app trends by language
+- Incorporate app data in regions outside of the United States, in addition to languages
+
 
 ## References
-
+You can learn more about how to get started with Dataquest [here]()
 ---
 
 ## Author 
